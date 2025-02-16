@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* width: 100%; */
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+form{
+    width: 400px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+form h2{
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+form label{
+    display: block;
+    font-size: 18px;
+    font-weight: bold ;
+}
+form input{
+    width: 100%;
+    padding: 16px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+button{
+    padding: 12px 18px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+form p{
+    font-size: 16px;
+}
+/*---------------------- header ------------------*/
+header{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 400px;
+    height: 100px;
+    
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 24px;
+    cursor: pointer;
+    font-size: 18px
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 132, 255);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a:hover{
+    color: rgb(0, 132, 255);
+}
+.search-section{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(0, 132, 255);
+    padding: 4px 0;
+}
+.categories{
+    position: relative;
+}
+#category-list {
+    /* background-color: #333; */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    padding: 12px 0;
+    height: auto;
+
+}
+#category-list li{
+    display: block;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 16px 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+#category-list li:hover{
+    background-color: rgb(0, 132, 255);
+    color: white;
+}
+/* .cross{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    cursor: pointer;
+} */
+#category-btn{
+    color: white;
+    border: none;
+    background-color: rgb(0, 0, 90);
+    padding: 12px 100px 12px 12px;
+}
+.search{
+    padding: 12px 100px 12px 12px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+/* --------------hero section------------ */
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    background-color: rgb(245, 245, 245);
+}
+.hero-image img{
+    width: 400px;
+    height: 400px;
+     /* border: 1px solid red; */
+}
+
+.hero-text{
+    width: 500px;
+}
+.hero-text h1{
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+.hero-text span{
+    font-size: 18px;
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(0, 132, 255);
+}
+button{
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(0, 132, 255);
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background-color: rgb(1, 98, 189);
+}
+.hero-text p{
+    font-size: 16px;
+    margin: 12px 0;
+    line-height: 20px;
+}
+/* ------------products section------------- */
+.products-section{
+    text-align: center;
+    /* padding-top: 20px; */
+    padding: 50px 0;
+}
+.products-section h2{
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.products-section nav{
+    margin-bottom: 50px;
+}
+.products-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.product-card{
+    width: 250px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 12px;
+    border-radius: 6px;
+}
+.card-image{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 12px;
+}
+.product-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.products-container-card{
+    width: 500px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+/* ------------footer----------- */
+footer{
+    background-color: rgb(0, 132, 255);
+    text-align: center;
+    padding: 18px;
+}
+footer p{
+    font-size: 18px;
+    color: #333;
+}
