@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <header>
@@ -19,10 +20,14 @@
             <li><a href="">media</a></li>
         </ul>
     </nav>
+    <div class="cart">
+        <i class="fa-solid fa-cart-shopping"></i> &nbsp;Cart
+    </div>
+    <div class="user-account"><p><i class="fa-solid fa-user"></i> &nbsp;  Account</p></div>
 </header>
 <div class="search-section">
     <div class="categories">
-        <button id="category-btn">Categories</button>
+        <button id="category-btn"> <i class="fa-solid fa-bars"></i> &nbsp; Categories</button>
         <div id="category-list" style="display: none;">
             <li>accessories</li>
             <li>electronics</li>
@@ -31,8 +36,12 @@
             <!-- <span class="cross">X</span> -->
         </div>
     </div>
+    <div class="search-input">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text"  id="search" class = "search" placeholder="Search for product" >
+    </div>
     
-    <input type="text" id="search" class = "search" placeholder="Search for product">
+    
 </div>
 
 <!-- ------------hero------------------>
@@ -43,15 +52,69 @@
             <h1>SALES UPTO 50% <span>off</span></h1>
             <h3>Shop the best products at unbeatable prices</h3>
             <p>Explore a wide range of premium-quality products, from electronics to fashion, home essentials, and much more. Whether you're upgrading your tech, refreshing your wardrobe, or enhancing your home.</p>
-            <button class="shopbtn">Shop now</button>
+            <button class="shopbtn"><a href="#products-section">Shop Now</a></button>
         </div>
         <div class="hero-image">
             <img src="/images/heroimage.png" alt="">
         </div>
     </div>
  </main>
+    <!-- services sub-section -->
+    <div class="services-container">
+        <div class="service1">
+            <div class="icon"><i class="fa-solid fa-truck"></i></div>
+           <div class="text"> <h3>free shipping</h3>
+            <p>on all drivers drive $99</p></div>
+        </div>
+        <div class="service1">
+           <div class="icon"> <i class="fa-regular fa-handshake"></i></div>
+            <div class="text"><h3>Secure payments</h3>
+                <p>we ensure secure payments</p></div>
+        </div>
+        <div class="service1">
+            <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <div class="text"><h3>100% money back</h3>
+                <p>10 days return policy</p></div>
+        </div>
+        <div class="service1">
+            <div class="icon"><i class="fa-solid fa-message"></i></div>
+            <div class="text"><h3>online support</h3>
+                <p>24/7 dedicated support</p></div>
+        </div>
+    </div>
+    <!-- women fashion -->
+<div class="fashion-container">
+<div class="image-container">
+    <h4>New Arrivals</h4>
+    <h2>Women's Fashion</h2>
+    <h3>Up to 70% Off</h3>
+    <a href="#products" class="btn btn--2">Read More</a>
+</div>
+<div class="content">
+    <div class="top-content">
+        <div class="top1">
+            <h5>25% Off</h5>
+            <h3>HeadPhones</h3>
+            <a href="#products" class="btn btn--1">Shop Now</a>
+        </div>
+        <div class="top2">
+            <h5>25% Off</h5>
+            <h3>Watch</h3>
+            <a href="#products" class="btn btn--1">Shop Now</a>
+        </div>
+    </div>
+    <div class="bottom-content">
+        <h5>Laptops</h5>
+        <h3>Hp Laptop</h3>
+        <p>Min. 40% - 80% Off</p>
+            <a href="#products" class="btn btn--1">Shop Now</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- products -->
 
-<div class="products-section">
+<div class="products-section" id="products-section">
     <h2>Top Categories</h2>
     <nav>
         <ul>
@@ -69,52 +132,9 @@
             </div>
             <p>Smart Watch</p>
             <h4>$10.12</h4>
-            <button class="shopbtn">Shop now</button>
+            <button class="add-to-cart">Add to Cart</button>
         </div>
 
-        <div class="product-card">
-            <div class="card-image">
-                <img src="/images/heroimage.png" alt="">
-            </div>
-            <p>Smart Watch</p>
-            <h4>$10.12</h4>
-            <button class="shopbtn">Shop now</button>
-        </div>
-
-        <div class="product-card">
-            <div class="card-image">
-                <img src="/images/heroimage.png" alt="">
-            </div>
-            <p>Smart Watch</p>
-            <h4>$10.12</h4>
-            <button class="shopbtn">Shop now</button>
-        </div>
-
-        <div class="product-card">
-            <div class="card-image">
-                <img src="/images/heroimage.png" alt="">
-            </div>
-            <p>Smart Watch</p>
-            <h4>$10.12</h4>
-            <button class="shopbtn">Shop now</button>
-        </div>
-
-        <div class="product-card">
-            <div class="card-image">
-                <img src="/images/heroimage.png" alt="">
-            </div>
-            <p>Smart Watch</p>
-            <h4>$10.12</h4>
-        </div>
-
-        <div class="product-card">
-            <div class="card-image">
-                <img src="/images/heroimage.png" alt="">
-            </div>
-            <p>Smart Watch</p>
-            <h4>$10.12</h4>
-            <button class="shopbtn">Shop now</button>
-        </div>
 
     </div>
 </div>
