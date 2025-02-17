@@ -115,6 +115,12 @@ header i{
 }
 .user-account, .cart{
     cursor: pointer;
+    padding: 12px 18px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+}
+.user-account:hover, .cart:hover{
+    background-color: rgb(228, 224, 224);
 }
 
 .search-section{
@@ -444,4 +450,18 @@ footer{
 footer p{
     font-size: 18px;
     color: #333;
+}
+
+/* -----about-------------- */
+.about-section{
+    height: 200px;
+    text-align: center;
+    background: linear-gradient(rgb(0, 132, 255), rgba(172, 171, 171, 0.3)) ,url(/images/logo.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 24px;
+}
+.about-section h1{
+    font-size: 48px;
+    text-transform: capitalize;
 }
